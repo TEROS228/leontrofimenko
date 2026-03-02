@@ -6,21 +6,21 @@ export async function GET() {
     <loc>https://leontrofimenko.com</loc>
     <image:image>
       <image:loc>https://leontrofimenko.com/me.jpeg</image:loc>
-      <image:caption>Leon Trofimenko - 16-year-old entrepreneur and developer, founder of Japrix and Wordlex</image:caption>
-      <image:title>Leon Trofimenko</image:title>
+      <image:caption>Leon Trofimenko (Леон Трофименко) - 16-year-old entrepreneur and developer, founder of Japrix and Wordlex. Молодой предприниматель и разработчик.</image:caption>
+      <image:title>Leon Trofimenko (Леон Трофименко)</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://leontrofimenko.com/#about</loc>
     <image:image>
       <image:loc>https://leontrofimenko.com/me.jpeg</image:loc>
-      <image:caption>Leon Trofimenko - AI-Driven Developer and Systems Architect</image:caption>
-      <image:title>Leon Trofimenko - About</image:title>
+      <image:caption>Leon Trofimenko (Леон Трофименко) - AI-Driven Developer and Systems Architect. Разработчик и системный архитектор.</image:caption>
+      <image:title>Leon Trofimenko (Леон Трофименко) - About</image:title>
     </image:image>
     <image:image>
       <image:loc>https://leontrofimenko.com/me2.jpeg</image:loc>
-      <image:caption>Leon Trofimenko - 16-year-old entrepreneur building innovative e-commerce solutions</image:caption>
-      <image:title>Leon Trofimenko - Photo 2</image:title>
+      <image:caption>Leon Trofimenko (Леон Трофименко) - 16-year-old entrepreneur building innovative e-commerce solutions. Молодой предприниматель.</image:caption>
+      <image:title>Leon Trofimenko (Леон Трофименко) - Photo 2</image:title>
     </image:image>
   </url>
 </urlset>`;

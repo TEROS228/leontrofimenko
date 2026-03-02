@@ -13,26 +13,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leon Trofimenko - 16-Year-Old Entrepreneur & Developer",
-  description: "Leon Trofimenko is a 16-year-old entrepreneur and developer building innovative e-commerce solutions. Specializing in AI-driven development, system architecture, and data acquisition for global markets.",
+  title: "Leon Trofimenko (Леон Трофименко) - 16-Year-Old Entrepreneur & Developer",
+  description: "Leon Trofimenko (Леон Трофименко) is a 16-year-old entrepreneur and developer building innovative e-commerce solutions. Specializing in AI-driven development, system architecture, and data acquisition for global markets. Молодой предприниматель и разработчик из России.",
   keywords: [
     "Leon Trofimenko",
     "Leon Trofimenko developer",
     "Leon Trofimenko entrepreneur",
+    "Леон Трофименко",
+    "Леон Трофименко разработчик",
+    "Леон Трофименко предприниматель",
     "16 year old entrepreneur",
     "young entrepreneur",
     "AI developer",
     "Japrix founder",
     "e-commerce developer",
     "systems architect",
-    "teenage entrepreneur"
+    "teenage entrepreneur",
+    "молодой предприниматель",
+    "разработчик 16 лет"
   ],
   authors: [{ name: "Leon Trofimenko" }],
   creator: "Leon Trofimenko",
   publisher: "Leon Trofimenko",
   openGraph: {
-    title: "Leon Trofimenko - 16-Year-Old Entrepreneur & Developer",
-    description: "Leon Trofimenko is a 16-year-old entrepreneur and developer building innovative e-commerce solutions. Specializing in AI-driven development, system architecture, and data acquisition.",
+    title: "Leon Trofimenko (Леон Трофименко) - 16-Year-Old Entrepreneur & Developer",
+    description: "Leon Trofimenko (Леон Трофименко) - 16-year-old entrepreneur and developer building innovative e-commerce solutions. Молодой предприниматель и разработчик, специализирующийся на AI-разработке и системной архитектуре.",
     url: "https://leontrofimenko.com",
     siteName: "Leon Trofimenko",
     locale: "en_US",
@@ -54,8 +59,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Leon Trofimenko - 16-Year-Old Entrepreneur & Developer",
-    description: "Building innovative e-commerce solutions with AI-driven development",
+    title: "Leon Trofimenko (Леон Трофименко) - 16-Year-Old Entrepreneur & Developer",
+    description: "Building innovative e-commerce solutions with AI-driven development. Молодой предприниматель и разработчик.",
     images: ["/me.jpeg", "/me2.jpeg"],
     creator: "@leontrofimenko",
   },
