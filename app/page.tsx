@@ -171,6 +171,9 @@ export default function Home() {
             </h2>
 
             <div className="relative">
+              {/* Vertical Line for Mobile */}
+              <div className="md:hidden absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-500 via-blue-500 via-pink-500 via-purple-500 via-indigo-500 via-cyan-500 to-amber-500 opacity-30"></div>
+
               {/* Curved Path SVG - Hidden on mobile */}
               <svg className="hidden md:block absolute inset-0 w-full h-full pointer-events-none z-0" preserveAspectRatio="none" viewBox="0 0 1000 1500">
                 {/* Outer glow */}
@@ -241,6 +244,11 @@ export default function Home() {
               <div className="relative space-y-8 md:space-y-20">
                 {/* Item 1 - Left - 2024 */}
                 <div className="flex items-start justify-start fade-in-up group">
+                  {/* Mobile dot */}
+                  <div className="md:hidden flex-shrink-0 relative z-10 mr-6">
+                    <div className="w-3 h-3 bg-emerald-500 rounded-full ring-4 ring-emerald-500/20"></div>
+                  </div>
+
                   <div className="w-full md:w-1/2 md:pr-12">
                     <div className="relative p-4 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-emerald-500/20 transition-all duration-500 hover:border-emerald-500/60 hover:shadow-2xl hover:shadow-emerald-500/30 hover:-translate-y-2">
                       {/* Glow Effect on Hover */}
@@ -262,6 +270,11 @@ export default function Home() {
 
                 {/* Item 2 - Right - 2024 */}
                 <div className="flex items-start md:justify-end fade-in-up stagger-1 group">
+                  {/* Mobile dot */}
+                  <div className="md:hidden flex-shrink-0 relative z-10 mr-6">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full ring-4 ring-blue-500/20"></div>
+                  </div>
+
                   <div className="hidden md:block md:w-1/2"></div>
                   <div className="w-full md:w-1/2 md:pl-12">
                     <div className="relative p-4 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-blue-500/20 transition-all duration-500 hover:border-blue-500/60 hover:shadow-2xl hover:shadow-blue-500/30 hover:-translate-y-2">
@@ -283,6 +296,11 @@ export default function Home() {
 
                 {/* Item 3 - Left - 2025 */}
                 <div className="flex items-start justify-start fade-in-up stagger-2 group">
+                  {/* Mobile dot */}
+                  <div className="md:hidden flex-shrink-0 relative z-10 mr-6">
+                    <div className="w-3 h-3 bg-pink-500 rounded-full ring-4 ring-pink-500/20"></div>
+                  </div>
+
                   <div className="w-full md:w-1/2 md:pr-12">
                     <div className="relative p-4 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-pink-500/20 transition-all duration-500 hover:border-pink-500/60 hover:shadow-2xl hover:shadow-pink-500/30 hover:-translate-y-2">
                       <div className="absolute inset-0 bg-gradient-to-r from-pink-500/0 via-pink-500/10 to-pink-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
@@ -302,6 +320,11 @@ export default function Home() {
 
                 {/* Item 4 - Right - 2025 */}
                 <div className="flex items-start md:justify-end fade-in-up stagger-3 group">
+                  {/* Mobile dot */}
+                  <div className="md:hidden flex-shrink-0 relative z-10 mr-6">
+                    <div className="w-3 h-3 bg-purple-500 rounded-full ring-4 ring-purple-500/20"></div>
+                  </div>
+
                   <div className="hidden md:block md:w-1/2"></div>
                   <div className="w-full md:w-1/2 md:pl-12">
                     <div className="relative p-4 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-purple-500/20 transition-all duration-500 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/30 hover:-translate-y-2">
@@ -321,6 +344,11 @@ export default function Home() {
 
                 {/* Item 5 - Left - 2025 */}
                 <div className="flex items-start justify-start fade-in-up stagger-4 group">
+                  {/* Mobile dot */}
+                  <div className="md:hidden flex-shrink-0 relative z-10 mr-6">
+                    <div className="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-500/20"></div>
+                  </div>
+
                   <div className="w-full md:w-1/2 md:pr-12">
                     <div className="relative p-4 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-indigo-500/20 transition-all duration-500 hover:border-indigo-500/60 hover:shadow-2xl hover:shadow-indigo-500/30 hover:-translate-y-2">
                       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/0 via-indigo-500/10 to-indigo-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
@@ -340,6 +368,11 @@ export default function Home() {
 
                 {/* Item 6 - Right - 2025 */}
                 <div className="flex items-start md:justify-end fade-in-up stagger-5 group">
+                  {/* Mobile dot */}
+                  <div className="md:hidden flex-shrink-0 relative z-10 mr-6">
+                    <div className="w-3 h-3 bg-cyan-500 rounded-full ring-4 ring-cyan-500/20"></div>
+                  </div>
+
                   <div className="hidden md:block md:w-1/2"></div>
                   <div className="w-full md:w-1/2 md:pl-12">
                     <div className="relative p-4 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-cyan-500/20 transition-all duration-500 hover:border-cyan-500/60 hover:shadow-2xl hover:shadow-cyan-500/30 hover:-translate-y-2">
@@ -359,6 +392,11 @@ export default function Home() {
 
                 {/* Item 7 - Left - 2026 */}
                 <div className="flex items-start justify-start fade-in-up stagger-6 group">
+                  {/* Mobile dot */}
+                  <div className="md:hidden flex-shrink-0 relative z-10 mr-6">
+                    <div className="w-3 h-3 bg-amber-500 rounded-full ring-4 ring-amber-500/20"></div>
+                  </div>
+
                   <div className="w-full md:w-1/2 md:pr-12">
                     <div className="relative p-4 md:p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-amber-500/20 transition-all duration-500 hover:border-amber-500/60 hover:shadow-2xl hover:shadow-amber-500/30 hover:-translate-y-2">
                       <div className="absolute inset-0 bg-gradient-to-r from-amber-500/0 via-amber-500/10 to-amber-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
