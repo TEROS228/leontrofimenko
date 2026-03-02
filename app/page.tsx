@@ -270,11 +270,11 @@ export default function Home() {
 
                       <div className="relative z-10">
                         <div className="flex justify-between items-start mb-3">
-                          <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">Crypto Trading & First Exchange</h3>
+                          <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">First Exchange</h3>
                           <span className="text-sm font-semibold text-blue-400 px-3 py-1 bg-blue-500/20 rounded-full group-hover:bg-blue-500/30 transition-all duration-300">2024 • Age 14</span>
                         </div>
                         <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                          Started crypto trading, lost $300 but gained valuable experience. Got the idea to exchange foreign currency for people online - built a website for it.
+                          Got the idea to exchange foreign currency for people online - built a website for it.
                         </p>
                       </div>
                     </div>
