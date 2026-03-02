@@ -17,6 +17,11 @@ export async function GET() {
       <image:caption>Leon Trofimenko - AI-Driven Developer and Systems Architect</image:caption>
       <image:title>Leon Trofimenko - About</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://leontrofimenko.com/me2.jpeg</image:loc>
+      <image:caption>Leon Trofimenko - 16-year-old entrepreneur building innovative e-commerce solutions</image:caption>
+      <image:title>Leon Trofimenko - Photo 2</image:title>
+    </image:image>
   </url>
 </urlset>`;
 

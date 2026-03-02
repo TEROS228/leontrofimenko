@@ -44,13 +44,19 @@ export const metadata: Metadata = {
         height: 630,
         alt: "Leon Trofimenko - Entrepreneur & Developer",
       },
+      {
+        url: "/me2.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Leon Trofimenko - 16-year-old entrepreneur building e-commerce solutions",
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Leon Trofimenko - 16-Year-Old Entrepreneur & Developer",
     description: "Building innovative e-commerce solutions with AI-driven development",
-    images: ["/me.jpeg"],
+    images: ["/me.jpeg", "/me2.jpeg"],
     creator: "@leontrofimenko",
   },
   robots: {
