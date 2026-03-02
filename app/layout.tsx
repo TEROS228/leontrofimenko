@@ -80,13 +80,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
       { url: '/me.jpeg' },
-      { url: '/icon.jpg', sizes: '192x192', type: 'image/jpeg' },
     ],
     apple: [
-      { url: '/me.jpeg' },
-      { url: '/apple-icon.jpg', sizes: '180x180', type: 'image/jpeg' },
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
     ],
+    shortcut: '/icon.png',
   },
 };
 
