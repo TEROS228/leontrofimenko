@@ -126,7 +126,14 @@ export default function RootLayout({
                   "url": "https://www.wordlex.online",
                   "description": "English learning platform"
                 }
-              ]
+              ],
+              "image": {
+                "@type": "ImageObject",
+                "url": "https://leontrofimenko.com/me.jpeg",
+                "width": 1200,
+                "height": 630,
+                "caption": "Leon Trofimenko - 16-year-old entrepreneur and developer"
+              }
             })
           }}
         />

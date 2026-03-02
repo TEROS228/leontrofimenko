@@ -2,5 +2,6 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemaps
 Sitemap: https://leontrofimenko.com/sitemap.xml
+Sitemap: https://leontrofimenko.com/image-sitemap.xml
