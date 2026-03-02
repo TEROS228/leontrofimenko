@@ -1,0 +1,6 @@
+# robots.txt for Leon Trofimenko website
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://leontrofimenko.com/sitemap.xml
