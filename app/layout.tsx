@@ -67,6 +67,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://leontrofimenko.com",
   },
+  icons: {
+    icon: [
+      { url: '/me.jpeg' },
+      { url: '/icon.jpg', sizes: '192x192', type: 'image/jpeg' },
+    ],
+    apple: [
+      { url: '/me.jpeg' },
+      { url: '/apple-icon.jpg', sizes: '180x180', type: 'image/jpeg' },
+    ],
+  },
 };
 
 export default function RootLayout({
