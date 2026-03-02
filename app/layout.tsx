@@ -99,9 +99,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
+        <link rel="icon" type="image/jpeg" href="/me.jpeg" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
+        <link rel="shortcut icon" href="/icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
