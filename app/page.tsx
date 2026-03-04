@@ -46,6 +46,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 relative overflow-hidden">
+      {/* Language Switcher */}
+      <LanguageSwitcher language={language} onLanguageChange={changeLanguage} />
+
       {/* Smooth Scroll Handler */}
       <SmoothScroll />
 
@@ -63,21 +66,20 @@ export default function Home() {
           <div className="max-w-6xl w-full text-center">
             <div className="mb-4 md:mb-6 fade-in-up">
               <span className="inline-block px-3 md:px-4 py-1.5 md:py-2 bg-white rounded-full text-xs md:text-sm font-medium text-gray-600 shadow-sm">
-                👋 Hi, I'm
+                👋 {t.hero.greeting}
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6 fade-in-up stagger-1 text-gray-900 px-4">
-              Leon Trofimenko
+              {t.hero.name}
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 font-medium mb-3 md:mb-4 fade-in-up stagger-2 px-4">
-              16-year-old entrepreneur & developer
+              {t.hero.title}
             </p>
 
             <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8 md:mb-12 fade-in-up stagger-3 leading-relaxed px-4">
-              Building innovative products that transform industries.
-              Combining entrepreneurial mindset with world-class technical skills.
+              {t.hero.subtitle}
             </p>
 
             {/* CTA Buttons */}
@@ -86,13 +88,13 @@ export default function Home() {
                 href="#projects"
                 className="px-6 md:px-8 py-3 md:py-4 text-white rounded-xl text-sm md:text-base font-semibold btn-primary btn-shimmer btn-float"
               >
-                <span className="relative z-10">View Projects</span>
+                <span className="relative z-10">{t.hero.cta1}</span>
               </a>
               <a
                 href="#contact"
                 className="px-6 md:px-8 py-3 md:py-4 bg-white text-gray-900 rounded-xl text-sm md:text-base font-semibold border-2 border-gray-200 btn-secondary"
               >
-                <span className="relative z-10 text-gray-900">Get in Touch</span>
+                <span className="relative z-10 text-gray-900">{t.hero.cta2}</span>
               </a>
             </div>
           </div>
