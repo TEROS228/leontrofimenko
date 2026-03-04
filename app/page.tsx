@@ -109,7 +109,7 @@ export default function Home() {
                 {/* Avatar */}
                 <div className="flex-shrink-0">
                   <img
-                    src="/me.jpeg"
+                    src="/me.jpeg?v=3"
                     alt="Leon Trofimenko - 16-year-old entrepreneur and developer, founder of Japrix and Wordlex"
                     title="Leon Trofimenko"
                     className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-3xl object-cover float-subtle shadow-lg"
