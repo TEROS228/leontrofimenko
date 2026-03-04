@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "Леон Трофименко",
     "Леон Трофименко разработчик",
     "Леон Трофименко предприниматель",
+    "レオン・トロフィメンコ",
+    "起業家",
+    "開発者",
     "16 year old entrepreneur",
     "young entrepreneur",
     "AI developer",
@@ -30,7 +33,9 @@ export const metadata: Metadata = {
     "systems architect",
     "teenage entrepreneur",
     "молодой предприниматель",
-    "разработчик 16 лет"
+    "разработчик 16 лет",
+    "16歳起業家",
+    "若手起業家"
   ],
   authors: [{ name: "Leon Trofimenko" }],
   creator: "Leon Trofimenko",

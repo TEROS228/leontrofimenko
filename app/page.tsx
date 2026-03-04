@@ -3,9 +3,13 @@
 import { useState } from 'react';
 import FloatingShapes from './components/FloatingShapes';
 import SmoothScroll from './components/SmoothScroll';
+import LanguageSwitcher, { useLanguage } from './components/LanguageSwitcher';
+import { translations } from './translations';
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const { language, changeLanguage } = useLanguage();
+  const t = translations[language];
 
   const projects = [
     {
