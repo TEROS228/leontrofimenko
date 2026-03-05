@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-export type Language = 'en' | 'ru' | 'ja';
+export type Language = 'en' | 'ja';
 
 export function useLanguage() {
   const [language, setLanguage] = useState<Language>('en');
@@ -37,16 +37,6 @@ export default function LanguageSwitcher({ language, onLanguageChange }: Props) 
         }`}
       >
         EN
-      </button>
-      <button
-        onClick={() => onLanguageChange('ru')}
-        className={`px-3 py-1 rounded-full text-sm font-medium transition-all ${
-          language === 'ru'
-            ? 'bg-indigo-500 text-white'
-            : 'text-gray-600 hover:bg-gray-100'
-        }`}
-      >
-        RU
       </button>
       <button
         onClick={() => onLanguageChange('ja')}

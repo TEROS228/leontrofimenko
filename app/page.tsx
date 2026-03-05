@@ -14,30 +14,30 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: 'Japrix',
-      description: 'E-commerce platform for Japanese market with advanced data analytics and automated inventory management',
+      title: t.projects.list[0].title,
+      description: t.projects.list[0].description,
       tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'AWS'],
-      status: 'Early Access',
+      status: t.projects.status.earlyAccess,
       price: '$60,000',
       website: 'http://154.12.247.109',
       isEarlyAccess: true,
     },
     {
       id: 2,
-      title: 'Wordlex',
-      description: 'Interactive English learning platform with AI-powered exercises and personalized learning paths',
+      title: t.projects.list[1].title,
+      description: t.projects.list[1].description,
       tech: ['React', 'Node.js', 'MongoDB', 'OpenAI API'],
-      status: 'Live',
+      status: t.projects.status.live,
       price: null,
       website: 'https://www.wordlex.online',
       isEarlyAccess: false,
     },
     {
       id: 3,
-      title: 'Budget Tracker',
-      description: 'Personal finance management app with budgeting tools, expense tracking, and financial insights',
+      title: t.projects.list[2].title,
+      description: t.projects.list[2].description,
       tech: ['React Native', 'Firebase', 'TypeScript'],
-      status: 'In Development',
+      status: t.projects.status.inDevelopment,
       price: null,
       website: null,
       isEarlyAccess: false,
@@ -119,41 +119,41 @@ export default function Home() {
                 {/* Text */}
                 <div className="flex-1">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-gray-900">
-                    About Me
+                    {t.about.title}
                   </h2>
                   <p className="text-base md:text-lg lg:text-xl text-indigo-600 font-semibold mb-4 md:mb-6">
-                    AI-Driven Developer | Systems Architect
+                    {t.about.subtitle}
                   </p>
 
                   <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
-                      I don't just write code; I solve complex business problems using AI and human logic to build high-scale systems that previously required entire engineering teams.
+                      {t.about.description1}
                     </p>
                     <p>
-                      I specialize in data architectures and automated solutions for global e-commerce markets, fueled by discipline and a relentless drive for efficiency.
+                      {t.about.description2}
                     </p>
                   </div>
 
                   {/* Core Expertise */}
                   <div className="mt-6 md:mt-8">
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">Core Expertise</h3>
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">{t.about.expertise}</h3>
                     <div className="grid gap-2.5 md:gap-3">
                       <div className="flex gap-2 md:gap-3 items-start">
                         <div className="flex-shrink-0 w-1.5 h-1.5 bg-indigo-500 rounded-full mt-1.5 md:mt-2"></div>
                         <p className="text-sm md:text-base text-gray-700">
-                          <span className="font-semibold">AI Orchestration:</span> Leveraging LLMs to architect and debug software at 10x speed
+                          <span className="font-semibold">{t.about.skill1}</span> {t.about.skill1desc}
                         </p>
                       </div>
                       <div className="flex gap-2 md:gap-3 items-start">
                         <div className="flex-shrink-0 w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 md:mt-2"></div>
                         <p className="text-sm md:text-base text-gray-700">
-                          <span className="font-semibold">Data Acquisition:</span> High-load scrapers for Rakuten, Amazon, handling anti-bot systems
+                          <span className="font-semibold">{t.about.skill2}</span> {t.about.skill2desc}
                         </p>
                       </div>
                       <div className="flex gap-2 md:gap-3 items-start">
                         <div className="flex-shrink-0 w-1.5 h-1.5 bg-pink-500 rounded-full mt-1.5 md:mt-2"></div>
                         <p className="text-sm md:text-base text-gray-700">
-                          <span className="font-semibold">System Architecture:</span> End-to-end infrastructures for $40K+ projects
+                          <span className="font-semibold">{t.about.skill3}</span> {t.about.skill3desc}
                         </p>
                       </div>
                     </div>
@@ -174,7 +174,7 @@ export default function Home() {
 
           <div className="max-w-6xl mx-auto relative z-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-16 gradient-text px-4">
-              My Journey
+              {t.journey.title}
             </h2>
 
             <div className="relative">
@@ -263,11 +263,11 @@ export default function Home() {
 
                       <div className="relative z-10">
                         <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
-                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">First Commercial Project</h3>
-                          <span className="text-xs md:text-sm font-semibold text-emerald-400 px-3 py-1 bg-emerald-500/20 rounded-full group-hover:bg-emerald-500/30 transition-all duration-300 whitespace-nowrap">2024 • Age 14</span>
+                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">{t.journey.items[0].title}</h3>
+                          <span className="text-xs md:text-sm font-semibold text-emerald-400 px-3 py-1 bg-emerald-500/20 rounded-full group-hover:bg-emerald-500/30 transition-all duration-300 whitespace-nowrap">{t.journey.items[0].year}</span>
                         </div>
                         <p className="text-sm md:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                          Programmed a Telegram bot for a company and earned my first $100. Started learning and building websites on Tilda and Wix platforms.
+                          {t.journey.items[0].description}
                         </p>
                       </div>
                     </div>
@@ -290,11 +290,11 @@ export default function Home() {
 
                       <div className="relative z-10">
                         <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
-                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">First Exchange</h3>
-                          <span className="text-xs md:text-sm font-semibold text-blue-400 px-3 py-1 bg-blue-500/20 rounded-full group-hover:bg-blue-500/30 transition-all duration-300 whitespace-nowrap">2024 • Age 14</span>
+                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">{t.journey.items[1].title}</h3>
+                          <span className="text-xs md:text-sm font-semibold text-blue-400 px-3 py-1 bg-blue-500/20 rounded-full group-hover:bg-blue-500/30 transition-all duration-300 whitespace-nowrap">{t.journey.items[1].year}</span>
                         </div>
                         <p className="text-sm md:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                          Got the idea to exchange foreign currency for people online - built a website for it.
+                          {t.journey.items[1].description}
                         </p>
                       </div>
                     </div>
@@ -313,11 +313,11 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-r from-pink-500/0 via-pink-500/10 to-pink-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
                       <div className="relative z-10">
                         <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
-                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-pink-400 transition-colors duration-300">Marketing Experience</h3>
-                          <span className="text-xs md:text-sm font-semibold text-pink-400 px-3 py-1 bg-pink-500/20 rounded-full group-hover:bg-pink-500/30 transition-all duration-300 whitespace-nowrap">2025 • Age 15</span>
+                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-pink-400 transition-colors duration-300">{t.journey.items[2].title}</h3>
+                          <span className="text-xs md:text-sm font-semibold text-pink-400 px-3 py-1 bg-pink-500/20 rounded-full group-hover:bg-pink-500/30 transition-all duration-300 whitespace-nowrap">{t.journey.items[2].year}</span>
                         </div>
                         <p className="text-sm md:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                          After an unsuccessful attempt to promote the exchange but successfully gaining marketing experience, decided to work locally and focus on business development.
+                          {t.journey.items[2].description}
                         </p>
                       </div>
                     </div>
@@ -338,11 +338,11 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
                       <div className="relative z-10">
                         <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
-                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300">First $1,000</h3>
-                          <span className="text-xs md:text-sm font-semibold text-purple-400 px-3 py-1 bg-purple-500/20 rounded-full group-hover:bg-purple-500/30 transition-all duration-300 whitespace-nowrap">2025 • Age 15</span>
+                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300">{t.journey.items[3].title}</h3>
+                          <span className="text-xs md:text-sm font-semibold text-purple-400 px-3 py-1 bg-purple-500/20 rounded-full group-hover:bg-purple-500/30 transition-all duration-300 whitespace-nowrap">{t.journey.items[3].year}</span>
                         </div>
                         <p className="text-sm md:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                          Earned my first $1,000 from my currency exchange business. An important milestone proving the business model works.
+                          {t.journey.items[3].description}
                         </p>
                       </div>
                     </div>
@@ -361,11 +361,11 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/0 via-indigo-500/10 to-indigo-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
                       <div className="relative z-10">
                         <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
-                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300">The Japan Dream</h3>
-                          <span className="text-xs md:text-sm font-semibold text-indigo-400 px-3 py-1 bg-indigo-500/20 rounded-full group-hover:bg-indigo-500/30 transition-all duration-300 whitespace-nowrap">2025 • Age 15</span>
+                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300">{t.journey.items[4].title}</h3>
+                          <span className="text-xs md:text-sm font-semibold text-indigo-400 px-3 py-1 bg-indigo-500/20 rounded-full group-hover:bg-indigo-500/30 transition-all duration-300 whitespace-nowrap">{t.journey.items[4].year}</span>
                         </div>
                         <p className="text-sm md:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                          Discovered the opportunity to fly to Japan and start a company, fulfilling my dream of becoming a multi-millionaire. Realized I needed quality software worth hundreds of thousands of dollars - decided to build it myself.
+                          {t.journey.items[4].description}
                         </p>
                       </div>
                     </div>
@@ -386,11 +386,11 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/10 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
                       <div className="relative z-10">
                         <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
-                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">Website Development</h3>
-                          <span className="text-xs md:text-sm font-semibold text-cyan-400 px-3 py-1 bg-cyan-500/20 rounded-full group-hover:bg-cyan-500/30 transition-all duration-300 whitespace-nowrap">2025 • Age 15</span>
+                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">{t.journey.items[5].title}</h3>
+                          <span className="text-xs md:text-sm font-semibold text-cyan-400 px-3 py-1 bg-cyan-500/20 rounded-full group-hover:bg-cyan-500/30 transition-all duration-300 whitespace-nowrap">{t.journey.items[5].year}</span>
                         </div>
                         <p className="text-sm md:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                          Completed the website development that I had to restart from scratch about 6 times. Persistence and determination paid off.
+                          {t.journey.items[5].description}
                         </p>
                       </div>
                     </div>
@@ -409,11 +409,11 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-r from-amber-500/0 via-amber-500/10 to-amber-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
                       <div className="relative z-10">
                         <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
-                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-300">Growth & Anticipation</h3>
-                          <span className="text-xs md:text-sm font-semibold text-amber-400 px-3 py-1 bg-amber-500/20 rounded-full group-hover:bg-amber-500/30 transition-all duration-300 whitespace-nowrap">2026 • Age 16</span>
+                          <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-300">{t.journey.items[6].title}</h3>
+                          <span className="text-xs md:text-sm font-semibold text-amber-400 px-3 py-1 bg-amber-500/20 rounded-full group-hover:bg-amber-500/30 transition-all duration-300 whitespace-nowrap">{t.journey.items[6].year}</span>
                         </div>
                         <p className="text-sm md:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                          Continuing to develop multiple projects and improve my skills while waiting for the flight to Japan. Big goals and ambitious plans ahead.
+                          {t.journey.items[6].description}
                         </p>
                       </div>
                     </div>
@@ -429,10 +429,10 @@ export default function Home() {
         <section id="projects" className="py-12 md:py-20 px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4 gradient-text px-4">
-              Featured Projects
+              {t.projects.title}
             </h2>
             <p className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg px-4">
-              Building innovative solutions for the future
+              {t.projects.subtitle}
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -469,7 +469,7 @@ export default function Home() {
                   {project.isEarlyAccess && (
                     <div className="mb-4 p-2 md:p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
                       <p className="text-xs text-yellow-800 font-medium">
-                        ⚠️ Early Access: Ordering is currently disabled. Demo purposes only.
+                        {t.projects.earlyAccessWarning}
                       </p>
                     </div>
                   )}
@@ -477,7 +477,7 @@ export default function Home() {
                   {/* Price */}
                   <div className="pt-3 md:pt-4 border-t border-gray-200 mb-3 md:mb-4">
                     <div className="text-xs md:text-sm text-gray-600">
-                      <span className="font-semibold">Project Value:</span> <span className="text-indigo-600 font-bold">{project.price || '?'}</span>
+                      <span className="font-semibold">{t.projects.projectValue}</span> <span className="text-indigo-600 font-bold">{project.price || '?'}</span>
                     </div>
                   </div>
 
@@ -489,11 +489,11 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="block w-full px-4 md:px-6 py-2.5 md:py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-xl text-sm md:text-base font-semibold text-center button-hover"
                     >
-                      Visit Website →
+                      {t.projects.visitWebsite}
                     </a>
                   ) : (
                     <div className="block w-full px-4 md:px-6 py-2.5 md:py-3 bg-gray-200 text-gray-500 rounded-xl text-sm md:text-base font-semibold text-center">
-                      Coming Soon
+                      {t.projects.comingSoon}
                     </div>
                   )}
                 </div>
@@ -507,20 +507,19 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="glass-card p-6 md:p-12 lg:p-16 rounded-3xl text-center smooth-shadow">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 gradient-text px-4">
-                Let's Collaborate
+                {t.contact.title}
               </h2>
               <p className="text-base md:text-lg text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
-                Open to new projects, investments, and partnerships.
-                Get in touch if you have an exciting idea!
+                {t.contact.description}
               </p>
 
               <div className="flex justify-center px-4">
                 <a
-                  href="mailto:leontrofim228@gmail.com"
+                  href={`mailto:${t.contact.email}`}
                   className="px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-xl text-sm md:text-base font-semibold button-hover inline-flex items-center justify-center gap-2"
                 >
                   <span>📧</span>
-                  <span className="break-all">leontrofim228@gmail.com</span>
+                  <span className="break-all">{t.contact.email}</span>
                 </a>
               </div>
             </div>
@@ -530,7 +529,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="py-12 px-4 text-center bg-gray-50">
           <p className="text-gray-600 text-sm">
-            © 2026 Leon Trofimenko
+            {t.footer.copyright}
           </p>
         </footer>
       </div>
