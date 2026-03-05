@@ -178,11 +178,11 @@ export default function Home() {
                   <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6 leading-relaxed">
                     真に目標を信じる者に、怠惰という言葉はない。
                   </p>
-                  <p className="text-base md:text-lg text-gray-600 italic">
-                    {language === 'ja'
-                      ? '本当に目標を信じている人には、怠惰という言葉は存在しない。'
-                      : 'For those who truly believe in their goals, the word "laziness" does not exist.'}
-                  </p>
+                  {language === 'en' && (
+                    <p className="text-base md:text-lg text-gray-600 italic">
+                      For those who truly believe in their goals, the word "laziness" does not exist.
+                    </p>
+                  )}
                 </blockquote>
               </div>
             </div>
