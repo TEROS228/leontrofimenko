@@ -27,26 +27,30 @@ interface Props {
 
 export default function LanguageSwitcher({ language, onLanguageChange }: Props) {
   return (
-    <div className="fixed top-4 right-4 z-50 flex gap-2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+    <div className="fixed top-6 right-6 z-50 flex gap-3 bg-gradient-to-br from-white/95 to-gray-50/95 backdrop-blur-md rounded-2xl px-5 py-3 shadow-2xl border border-gray-200/50 hover:shadow-indigo-500/20 transition-all duration-300">
       <button
         onClick={() => onLanguageChange('en')}
-        className={`px-3 py-1 rounded-full text-sm font-medium transition-all ${
+        className={`px-4 py-2 rounded-xl text-base font-semibold transition-all duration-300 transform hover:scale-105 ${
           language === 'en'
-            ? 'bg-indigo-500 text-white'
-            : 'text-gray-600 hover:bg-gray-100'
+            ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/50'
+            : 'text-gray-600 hover:bg-gradient-to-r hover:from-gray-100 hover:to-gray-50'
         }`}
       >
-        EN
+        <span className="flex items-center gap-2">
+          🇬🇧 EN
+        </span>
       </button>
       <button
         onClick={() => onLanguageChange('ja')}
-        className={`px-3 py-1 rounded-full text-sm font-medium transition-all ${
+        className={`px-4 py-2 rounded-xl text-base font-semibold transition-all duration-300 transform hover:scale-105 ${
           language === 'ja'
-            ? 'bg-indigo-500 text-white'
-            : 'text-gray-600 hover:bg-gray-100'
+            ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/50'
+            : 'text-gray-600 hover:bg-gradient-to-r hover:from-gray-100 hover:to-gray-50'
         }`}
       >
-        日本語
+        <span className="flex items-center gap-2">
+          🇯🇵 日本語
+        </span>
       </button>
     </div>
   );
