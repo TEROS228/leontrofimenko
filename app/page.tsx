@@ -164,6 +164,31 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Quote Section */}
+        <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* Decorative quotes */}
+              <div className="absolute -top-4 -left-2 md:-left-4 text-6xl md:text-8xl text-indigo-200 font-serif leading-none">"</div>
+              <div className="absolute -bottom-8 -right-2 md:-right-4 text-6xl md:text-8xl text-purple-200 font-serif leading-none">"</div>
+
+              {/* Quote card */}
+              <div className="relative glass-card p-8 md:p-12 lg:p-16 rounded-3xl smooth-shadow border-2 border-indigo-100">
+                <blockquote className="text-center">
+                  <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6 leading-relaxed">
+                    真に目標を信じる者に、怠惰という言葉はない。
+                  </p>
+                  <p className="text-base md:text-lg text-gray-600 italic">
+                    {language === 'ja'
+                      ? '本当に目標を信じている人には、怠惰という言葉は存在しない。'
+                      : 'For those who truly believe in their goals, the word "laziness" does not exist.'}
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Journey/Timeline Section */}
         <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-gray-900 via-indigo-950 to-purple-950 relative overflow-hidden">
           {/* Animated Background Glow */}
