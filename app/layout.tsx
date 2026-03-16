@@ -115,45 +115,92 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Leon Trofimenko",
-              "alternateName": "Леон Трофименко",
+              "alternateName": ["Леон Трофименко", "レオン・トロフィメンコ"],
+              "givenName": "Leon",
+              "familyName": "Trofimenko",
               "jobTitle": "Entrepreneur & Developer",
               "description": "16-year-old entrepreneur and developer specializing in AI-driven development and e-commerce solutions",
               "url": "https://leontrofimenko.com",
               "email": "leontrofim228@gmail.com",
               "birthDate": "2010",
-              "nationality": "Russian",
+              "age": "16",
+              "height": "193 cm",
+              "gender": "Male",
+              "nationality": {
+                "@type": "Country",
+                "name": "Russia"
+              },
+              "homeLocation": {
+                "@type": "Place",
+                "name": "Russia"
+              },
               "alumniOf": {
                 "@type": "EducationalOrganization",
                 "name": "Self-taught Developer"
               },
               "knowsAbout": [
+                "Artificial Intelligence",
                 "AI Development",
                 "E-commerce",
                 "Web Development",
                 "System Architecture",
                 "Data Acquisition",
-                "Entrepreneurship"
+                "Entrepreneurship",
+                "Next.js",
+                "TypeScript",
+                "React"
+              ],
+              "knowsLanguage": [
+                {
+                  "@type": "Language",
+                  "name": "Russian",
+                  "alternateName": "ru"
+                },
+                {
+                  "@type": "Language",
+                  "name": "English",
+                  "alternateName": "en"
+                },
+                {
+                  "@type": "Language",
+                  "name": "Japanese",
+                  "alternateName": "ja"
+                }
               ],
               "founder": [
                 {
                   "@type": "Organization",
                   "name": "Japrix",
-                  "description": "E-commerce platform for Japanese market"
+                  "description": "E-commerce platform for Japanese market",
+                  "foundingDate": "2025"
                 },
                 {
                   "@type": "Organization",
                   "name": "Wordlex",
                   "url": "https://www.wordlex.online",
-                  "description": "English learning platform"
+                  "description": "English learning platform",
+                  "foundingDate": "2025"
                 }
               ],
-              "image": {
-                "@type": "ImageObject",
-                "url": "https://leontrofimenko.com/me.jpeg",
-                "width": 1200,
-                "height": 630,
-                "caption": "Leon Trofimenko - 16-year-old entrepreneur and developer"
-              }
+              "image": [
+                {
+                  "@type": "ImageObject",
+                  "url": "https://leontrofimenko.com/me.jpeg",
+                  "width": 1200,
+                  "height": 630,
+                  "caption": "Leon Trofimenko - 16-year-old entrepreneur and developer"
+                },
+                {
+                  "@type": "ImageObject",
+                  "url": "https://leontrofimenko.com/me2.jpeg",
+                  "width": 1200,
+                  "height": 630,
+                  "caption": "Leon Trofimenko - Young entrepreneur"
+                }
+              ],
+              "sameAs": [
+                "https://leontrofimenko.com"
+              ]
             })
           }}
         />
