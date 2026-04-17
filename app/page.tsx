@@ -162,11 +162,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* Hacker Terminal */}
-            <div className="mt-8 max-w-4xl mx-auto">
-              <HackerTerminal />
-            </div>
           </div>
         </section>
 
@@ -529,6 +524,11 @@ export default function Home() {
                   )}
                 </div>
               ))}
+            </div>
+
+            {/* Hacker Terminal */}
+            <div className="mt-12 max-w-6xl mx-auto">
+              <HackerTerminal />
             </div>
           </div>
         </section>
