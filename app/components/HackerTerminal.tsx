@@ -8,17 +8,25 @@ export default function HackerTerminal() {
 
   useEffect(() => {
     const commands = [
-      { text: 'root@leon:~$ initializing_secure_connection...', type: 'command', delay: 0 },
-      { text: '[✓] Connection established | Encryption: AES-256', type: 'success', delay: 600 },
-      { text: 'root@leon:~$ scanning_network_topology...', type: 'command', delay: 1200 },
-      { text: '[✓] Active nodes: 247 | Firewall: ACTIVE', type: 'success', delay: 1800 },
-      { text: 'root@leon:~$ deploying_ai_algorithms...', type: 'command', delay: 2400 },
-      { text: '[✓] Neural network initialized', type: 'success', delay: 3000 },
-      { text: 'root@leon:~$ analyzing_blockchain_data...', type: 'command', delay: 3600 },
-      { text: '[✓] Processing 10,000 tx/sec', type: 'success', delay: 4200 },
-      { text: '[!] WARNING: Intrusion attempt detected', type: 'warning', delay: 4800 },
-      { text: '[✓] Threat neutralized automatically', type: 'success', delay: 5400 },
-      { text: 'root@leon:~$ ALL SYSTEMS OPERATIONAL', type: 'success', delay: 6000 },
+      { text: 'root@leon:~$ initiating_osint_framework...', type: 'command', delay: 0 },
+      { text: '[✓] OSINT modules loaded | Sherlock, Maltego, theHarvester', type: 'success', delay: 500 },
+      { text: 'root@leon:~$ scanning_public_databases...', type: 'command', delay: 1000 },
+      { text: '[i] Querying: WHOIS, DNS, SSL certificates...', type: 'info', delay: 1400 },
+      { text: '[✓] Found 3,247 public records', type: 'success', delay: 1900 },
+      { text: 'root@leon:~$ analyzing_network_topology...', type: 'command', delay: 2400 },
+      { text: '[✓] Mapped 847 nodes | 23 subnets identified', type: 'success', delay: 3000 },
+      { text: 'root@leon:~$ running_vulnerability_scanner...', type: 'command', delay: 3600 },
+      { text: '[i] Nmap -sV -sC --script vuln target.system', type: 'info', delay: 4000 },
+      { text: '[!] CRITICAL: Open port 8080 detected', type: 'warning', delay: 4600 },
+      { text: '[!] CVE-2024-1337 exploit available', type: 'warning', delay: 5000 },
+      { text: 'root@leon:~$ executing_penetration_test...', type: 'command', delay: 5600 },
+      { text: '[i] Metasploit framework engaged', type: 'info', delay: 6000 },
+      { text: '[✓] Access granted | Root privileges obtained', type: 'success', delay: 6700 },
+      { text: 'root@leon:~$ extracting_data...', type: 'command', delay: 7300 },
+      { text: '[✓] Downloaded 2.3 GB | Encrypted archives', type: 'success', delay: 7900 },
+      { text: 'root@leon:~$ clearing_traces...', type: 'command', delay: 8400 },
+      { text: '[✓] Logs wiped | Backdoor installed', type: 'success', delay: 9000 },
+      { text: '[✓] MISSION COMPLETE | Exfiltration successful', type: 'success', delay: 9500 },
     ];
 
     commands.forEach(cmd => {
@@ -66,6 +74,7 @@ export default function HackerTerminal() {
                 line.type === 'command' ? 'text-yellow-400' :
                 line.type === 'success' ? 'text-green-400' :
                 line.type === 'warning' ? 'text-orange-400' :
+                line.type === 'info' ? 'text-cyan-400' :
                 'text-green-500'
               }`}
             >
