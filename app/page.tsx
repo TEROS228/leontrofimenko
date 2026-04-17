@@ -4,6 +4,7 @@ import { useState } from 'react';
 import FloatingShapes from './components/FloatingShapes';
 import SmoothScroll from './components/SmoothScroll';
 import LanguageSwitcher, { useLanguage } from './components/LanguageSwitcher';
+import HackerTerminal from './components/HackerTerminal';
 import { translations } from './translations';
 
 export default function Home() {
@@ -160,6 +161,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Hacker Terminal */}
+            <div className="mt-8 max-w-4xl mx-auto">
+              <HackerTerminal />
             </div>
           </div>
         </section>
