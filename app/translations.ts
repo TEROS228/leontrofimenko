@@ -58,6 +58,11 @@ export const translations = {
           title: "Growth & Anticipation",
           year: "2026 • Age 16",
           description: "Continuing to develop multiple projects and improve my skills while waiting for the flight to Japan. Big goals and ambitious plans ahead."
+        },
+        {
+          title: "SaaS Listed for Auction",
+          year: "2026 • Age 16",
+          description: "My SaaS project was listed on a startup auction marketplace for sale."
         }
       ]
     },
@@ -156,6 +161,11 @@ export const translations = {
           title: "継続的な成長",
           year: "2026年 • 16歳",
           description: "日本への渡航準備を進めながら、複数のプロジェクト開発とスキル向上に励んでおります。大きな目標に向かって着実に歩みを進めています。"
+        },
+        {
+          title: "SaaSがオークションに出品",
+          year: "2026年 • 16歳",
+          description: "16歳にして、自分が開発したSaaSプロジェクトがスタートアップ売買オークションに出品されました。作ったものに本当の市場価値があると証明された大きな節目です。多くの起業家がこの瞬間に辿り着くまで何年もかかります。"
         }
       ]
     },
