@@ -82,14 +82,6 @@ export const translations = {
         {
           title: "Japrix",
           description: "E-commerce platform for Japanese market with advanced data analytics and automated inventory management"
-        },
-        {
-          title: "Wordlex",
-          description: "Interactive English learning platform with AI-powered exercises and personalized learning paths"
-        },
-        {
-          title: "Budget Tracker",
-          description: "Personal finance management app with budgeting tools, expense tracking, and financial insights"
         }
       ]
     },
@@ -185,14 +177,6 @@ export const translations = {
         {
           title: "Japrix",
           description: "日本市場向けのeコマースプラットフォームです。データ分析機能と在庫管理の自動化に取り組んでおります"
-        },
-        {
-          title: "Wordlex",
-          description: "AI技術を活用した英語学習プラットフォームです。個々の学習者に合わせた学習体験の提供を目指しております"
-        },
-        {
-          title: "Budget Tracker",
-          description: "個人向けの財務管理アプリケーションです。予算管理と支出追跡の機能を開発中です"
         }
       ]
     },
